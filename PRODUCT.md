@@ -12,7 +12,7 @@ Tim (the builder) and other curious people who land on the site — a small, sel
 
 ## Product Purpose
 
-kor3d fuses real hydrological/ecological datasets into explorable terrain and maps, so a curious visitor can fly through or click around a place and come away understanding something true about it (a river's course, a glacier's retreat, a basin's population pressure) — not just look at a pretty render.
+water3d fuses real hydrological/ecological datasets into explorable terrain and maps, so a curious visitor can fly through or click around a place and come away understanding something true about it (a river's course, a glacier's retreat, a basin's population pressure) — not just look at a pretty render.
 
 ## Positioning
 
@@ -20,7 +20,7 @@ Unlike Google Earth or a generic map, every layer is a specific dataset (HydroSH
 
 ## Operating Context
 
-Static site on GitHub Pages (`timateus.github.io/kor3d`), built with Vite/React/Three.js. Individual locations (Aral Sea, Balqash, Almaty, Alakol, Caspian Sea, Suaq, Tuyuksu Glacier, Seliger, Garibaldi-Squamish) each get a 3D terrain page; `/basins` is a 2D SVG/D3 map covering all of Central Asia at once rather than one location. Data is pre-fetched/baked to static GeoJSON/JSON under `public/data/` — no backend, no live API calls at runtime except loading D3 from a CDN.
+Static site on GitHub Pages (`water3d.timnosov.com`), built with Vite/React/Three.js. Individual locations (Aral Sea, Balqash, Almaty, Alakol, Caspian Sea, Suaq, Tuyuksu Glacier, Seliger, Garibaldi-Squamish) each get a 3D terrain page; `/basins` is a 2D SVG/D3 map covering all of Central Asia at once rather than one location. Data is pre-fetched/baked to static GeoJSON/JSON under `public/data/` — no backend, no live API calls at runtime except loading D3 from a CDN.
 
 ## Capabilities and Constraints
 
@@ -35,7 +35,7 @@ None binding for `/basins` specifically — explicitly confirmed open to establi
 
 ## Evidence on Hand
 
-- Live reference: https://timateus.github.io/kor3d/basins
+- Live reference: https://water3d.timnosov.com/basins
 - Source: `src/pages/BasinsPage.tsx`
 - Data: `public/data/basins/*.json` (basin polygons at two granularities, country borders, merged river network)
 - Prior Impeccable critique snapshot: `.impeccable/critique/2026-09-25T13-01-32Z__src-pages-basinspage-tsx.md` — flagged the page as a "generic dashboard shell wearing Central Asia's data," structurally swappable to any other region with no changes, disconnected from the rest of kor3d's own type identity.

@@ -1,6 +1,6 @@
 # Tuyuksu glacier field test
 
-Local experimental route: `/glacier-test` (production base: `/kor3d/glacier-test`).
+Local experimental route: `/glacier-test` (production: `/glacier-test`).
 Prepared 20 October 2026. No production location data was replaced.
 
 ## Imported datasets
